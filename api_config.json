@@ -1,0 +1,69 @@
+{
+    "tbo_auth_provider": {
+        "get_token": {
+            "endpoint": "http://api.tektravels.com/SharedServices/SharedData.svc/rest/Authenticate",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "retry_attempts": 3,
+            "timeout": 5000
+        }
+    },
+    "tbo_flight_provider": {
+        "search_flights": {
+            "endpoint": "http://api.tektravels.com/BookingEngineService_Air/AirService.svc/rest/Search/",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "retry_attempts": 3,
+            "timeout": 60000
+        },
+        "fare_rule_api": {
+            "endpoint": "http://api.tektravels.com/BookingEngineService_Air/AirService.svc/rest/FareRule/",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "retry_attempts": 3,
+            "timeout": 60000
+        },
+        "fare_quote_api": {
+            "endpoint": "http://api.tektravels.com/BookingEngineService_Air/AirService.svc/rest/FareQuote/",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "retry_attempts": 3,
+            "timeout": 60000
+        },
+        "ticket_api": {
+            "endpoint": "http://api.tektravels.com/BookingEngineService_Air/AirService.svc/rest/Ticket/",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "retry_attempts": 3,
+            "timeout": 60000
+        },
+        "book_api": {
+            "endpoint": "http://api.tektravels.com/BookingEngineService_Air/AirService.svc/rest/Book/",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "retry_attempts": 3,
+            "timeout": 60000
+        },
+        "ssr_api": {
+            "endpoint": "http://api.tektravels.com/BookingEngineService_Air/AirService.svc/rest/SSR/",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "retry_attempts": 3,
+            "timeout": 60000
+        }
+    }
+}
