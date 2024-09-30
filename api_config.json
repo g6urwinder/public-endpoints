@@ -1,0 +1,60 @@
+{
+    "flight_provider": {
+        "search_flights": {
+            "endpoint": "https://b2bapiflights.benzyinfotech.com/flights/ExpressSearch",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "retry_attempts": 3,
+            "timeout": 5000
+        },
+        "get_express_search": {
+            "endpoint": "https://b2bapiflights.benzyinfotech.com/flights/GetExpSearch",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "retry_attempts": 3,
+            "timeout": 60000
+        },
+        "smart_pricer": {
+            "endpoint": "https://b2bapiflights.benzyinfotech.com/flights/SmartPricer",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "retry_attempts": 3,
+            "timeout": 60000
+        },
+        "get_smart_pricer": {
+            "endpoint": "https://b2bapiflights.benzyinfotech.com/flights/GetSPricer",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "retry_attempts": 3,
+            "timeout": 60000
+        },
+        "book_api": {
+            "endpoint": "https://b2bapiflights.benzyinfotech.com/flights/CreateItinerary",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "retry_attempts": 3,
+            "timeout": 60000
+        }
+    },
+    "auth_provider": {
+        "get_token": {
+            "endpoint": "https://b2bapiutils.benzyinfotech.com/Utils/Signature",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "retry_attempts": 3,
+            "timeout": 5000
+        }
+    }
+}
