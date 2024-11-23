@@ -44,6 +44,15 @@
             },
             "retry_attempts": 3,
             "timeout": 60000
+        },
+        "start_pay_api": {
+            "endpoint": "https://b2bapiflights.benzyinfotech.com/flights/Payment/StartPay",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "retry_attempts": 3,
+            "timeout": 60000
         }
     },
     "auth_provider": {
